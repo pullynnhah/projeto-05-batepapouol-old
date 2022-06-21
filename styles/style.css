@@ -3,19 +3,8 @@ body {
   background-color: #f3f3f3;
 }
 
-.hidden {
-  display: none;
-}
-
-.login:not(.hidden) {
+.login {
   background-color: #fff;
-
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
 
   display: flex;
   flex-direction: column;
@@ -32,14 +21,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 15px;
-}
-
-.login :not(.error) p {
-  display: none;
-}
-
-.login p {
-  color: #FF2C00;
 }
 
 .login input {
@@ -132,6 +113,10 @@ small {
 
 strong {
   font-weight: 700;
+}
+
+.hidden {
+  display: none;
 }
 
 aside {
