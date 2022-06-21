@@ -34,6 +34,14 @@ body {
   gap: 15px;
 }
 
+.login :not(.error) p {
+  display: none;
+}
+
+.login p {
+  color: #FF2C00;
+}
+
 .login input {
   height: 54px;
   font-size: 18px;
