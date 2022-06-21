@@ -167,7 +167,6 @@ h2 {
   gap: 12px;
 }
 
-
 .contact,
 .visibility {
   display: flex;
@@ -197,6 +196,7 @@ aside img {
 .tiny-icon {
   font-size: 22px;
 }
+
 /*
 aside img:not(.current) {
   opacity: 0;
