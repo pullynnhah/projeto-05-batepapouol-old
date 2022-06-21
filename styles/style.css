@@ -23,7 +23,6 @@ body {
   gap: 94px;
 }
 
-
 .login img {
   margin-top: 72px;
 }
@@ -52,14 +51,14 @@ body {
   height: 45px;
   color: #696969;
   text-align: center;
-  background-color: #E7E7E7;
+  background-color: #e7e7e7;
   border-radius: 9px;
 }
 
 .login button:hover {
   cursor: pointer;
   color: #e7e7e7;
-  background-color: #B93D24;
+  background-color: #b93d24;
 }
 
 header {
@@ -82,11 +81,11 @@ header img {
   width: 75px;
 }
 
-header ion-icon {
+.huge-icon {
   font-size: 45px;
 }
 
-ion-icon:hover {
+.icon:hover {
   cursor: pointer;
   color: #b93d24;
 }
@@ -127,6 +126,82 @@ strong {
   font-weight: 700;
 }
 
+aside {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.close-sidebar {
+  width: 30vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1;
+}
+
+.sidebar {
+  width: 70vw;
+  height: 100vh;
+  background-color: #fff;
+  padding: 0 18px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  margin: 23px;
+}
+
+.contacts,
+.visibilities {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.contact,
+.visibility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact div,
+.visibility div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.small-icon {
+  font-size: 25px;
+}
+
+aside img {
+  opacity: 0;
+}
+
+.check img {
+  opacity: 1;
+}
+
+.tiny-icon {
+  font-size: 22px;
+}
+/*
+aside img:not(.current) {
+  opacity: 0;
+} */
+
 footer {
   height: 80px;
   background-color: #fff;
@@ -166,6 +241,6 @@ footer input::placeholder {
   margin-top: 5px;
 }
 
-footer ion-icon {
+.big-icon {
   font-size: 26px;
 }

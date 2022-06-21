@@ -33,7 +33,7 @@
 
     <header>
       <img src="images/uol.png" alt="logo bate-papo uol" />
-      <ion-icon name="people"></ion-icon>
+      <ion-icon class="huge-icon icon" name="people"></ion-icon>
     </header>
     <main>
       <div class="msg status">
@@ -70,12 +70,62 @@
       </div>
     </main>
 
+    <aside class="hidden">
+      <div class="close-sidebar"></div>
+      <section class="sidebar">
+        <h2>Escolha um contato para enviar mensagem:</h2>
+        <div class="contacts">
+          <div class="contact">
+            <div class="icon">
+              <ion-icon class="small-icon" name="people"></ion-icon>
+              <p>Todos</p>
+            </div>
+            <img src="images/check.svg" alt="selected checkmark" />
+          </div>
+
+          <div class="contact">
+            <div class="icon">
+              <ion-icon class="small-icon" name="person-circle"></ion-icon>
+              <p>João</p>
+            </div>
+            <img src="images/check.svg" alt="selected checkmark" />
+          </div>
+
+          <div class="contact">
+            <div class="icon">
+              <ion-icon class="small-icon" name="person-circle"></ion-icon>
+              <p>Maria</p>
+            </div>
+            <img src="images/check.svg" alt="selected checkmark" />
+          </div>
+        </div>
+
+        <h2>Escolha a visibilidade:</h2>
+        <div class="visibilities">
+          <div class="visibility">
+            <div class="icon">
+              <ion-icon class="tiny-icon" name="lock-closed"></ion-icon>
+              <p>Reservadamente</p>
+            </div>
+            <img src="images/check.svg" alt="selected checkmark" />
+          </div>
+
+          <div class="visibility">
+            <div class="icon">
+              <ion-icon class="tiny-icon" name="lock-open"></ion-icon>
+              <p>Público</p>
+            </div>
+            <img src="images/check.svg" alt="selected checkmark" />
+          </div>
+        </div>
+      </section>
+    </aside>
     <footer>
       <div>
         <input type="text" placeholder="Escreva aqui..." />
         <p class="info">Enviando para Maria (reservadamente)</p>
       </div>
-      <ion-icon name="paper-plane-outline"></ion-icon>
+      <ion-icon class="big-icon icon" name="paper-plane-outline"></ion-icon>
     </footer>
 
     <!-- scripts -->
