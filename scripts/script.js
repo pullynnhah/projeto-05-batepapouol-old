@@ -16,9 +16,22 @@ function login() {
   loginInput.value = "";
 
   const promise = axios.post(`${API_URI}/participants`, {name: message.from});
-  promise.then(() => alert("works!"));
+  promise.then();
   promise.catch(login);
 }
+
+function keepConected() {
+  const promise = axios.post(`${API_URI}/status`, {name: message.from});
+  promise.then(response => setTimeout(keepConected, 5000));
+  promise.catch(error => window.location.reload());
+}
+
+function loadPage() {
+  keepConected();
+  
+}
+
+
 
 const API_URI = "https://mock-api.driven.com.br/api/v6/uol";
 
